@@ -44,6 +44,8 @@ Alternatively, you can download the files and save them to the directory manuall
 
 ## Screenshots
 
+The script I used in the screenshot can be found [here](https://github.com/ricwtk/openbox-config/blob/master/rofi-scripts/sys.sh)
+
 ### tnekcir-left-sidebar
 
 ![Screenshot for tnekcir-left-sidebar](/screenshots/tnekcir-left-sidebar-0.png)
