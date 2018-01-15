@@ -1,0 +1,141 @@
+/* copy this file to ~/.local/share/rofi/themes or /usr/share/rofi/themes */
+/* add `theme: "tnekcir-left-sidebar";` to config.rasi */
+
+/* Tnekcir-left-sidebar rasi theme */
+/* Created by Richard Wong */
+configuration {
+  sidebar-mode: true;
+  kb-mode-next: "Shift+Down";
+	kb-mode-previous: "Shift+Up";
+}
+
+*{
+  bg:   rgba ( 253, 246, 227, 100 % );
+  fg:   rgba (  88, 104, 117, 100 % );
+  red:  rgba ( 220,  50,  47, 100 % );
+  blue: rgba (  38, 139, 210, 100 % );
+  urgent-foreground:          @red;
+  active-foreground:          @blue;
+  selected-urgent-foreground: @bg;
+  selected-urgent-background: @red;
+  selected-active-foreground: @bg;
+  selected-active-background: @fg;
+}
+
+#window {
+  background-color: transparent;
+  border:           0;
+  padding:          0;
+  location:         center;
+  anchor:           center;
+}
+#mainbox {
+  border:           0;
+  padding:          0;
+  spacing:          0;
+  children:         [sidebar,content];
+  orientation:      horizontal;
+  background-color: transparent;
+}
+#content {
+  padding:          20px;
+  children:         [listview,inputbar];
+  orientation:      vertical;
+  border-radius:    0px 5px 5px 0px;
+  background-color: @bg;
+  text-color:       @fg;
+}
+#sidebar {
+  orientation:      vertical;
+  background-color: transparent;
+  border:           0px;
+}
+#button {
+  text-color:       @bg;
+  background-color: @fg;
+  border-radius:    5px 0px 0px 5px;
+  padding:          10px;
+}
+#button.selected {
+  text-color:       @fg;
+  background-color: @bg;
+}
+#listview {
+  fixed-height:     0;
+  border:           0;
+  padding:          0;
+  spacing:          0;
+  text-color:       @fg;
+  background-color: transparent;
+  scrollbar:        true;
+}
+#element {
+  border:  0;
+  padding: 10px ;
+}
+#element.normal.normal {
+  background-color: @bg;
+  text-color:       @fg;
+}
+#element.normal.urgent {
+  background-color: transparent;
+  text-color:       @urgent-foreground;
+}
+#element.normal.active {
+  background-color: transparent;
+  text-color:       @active-foreground;
+}
+#element.selected.normal {
+  background-color: @fg;
+  text-color:       @bg;
+}
+#element.selected.urgent {
+  background-color: @selected-urgent-background;
+  text-color:       @selected-urgent-foreground;
+}
+#element.selected.active {
+  background-color: @selected-active-background;
+  text-color:       @selected-active-foreground;
+}
+#element.alternate.normal {
+  background-color: @bg;
+  text-color:       @fg;
+}
+#element.alternate.urgent {
+  background-color: transparent;
+  text-color:       @urgent-foreground;
+}
+#element.alternate.active {
+  background-color: transparent;
+  text-color:       @active-foreground;
+}
+
+#inputbar {
+  spacing:          10px;
+  background-color: transparent;
+  text-color:       @fg;
+  padding:          0;
+}
+#case-indicator {
+  spacing:          0;
+  background-color: transparent;
+  text-color:       @fg;
+}
+#entry {
+  spacing:          0;
+  background-color: transparent;
+  text-color:       @fg;
+}
+#prompt {
+  spacing:          0;
+  background-color: transparent;
+  text-color:       @fg;
+}
+#scrollbar {
+  width:            2px ;
+  border:           0;
+  background-color: transparent;
+  handle-color:     @fg;
+  handle-width:     2px ;
+  padding:          2px;
+}
