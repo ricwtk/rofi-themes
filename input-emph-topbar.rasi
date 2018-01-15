@@ -71,12 +71,12 @@ configuration {
   padding: 5px 0px 0px 0px;
 }
 #listview {
-  background-color: transparent;
+  background-color: @below-bg;
   spacing: 0;
   border-radius: 5px;
 }
 #element {
-  background-color: @below-bg;
+  background-color: transparent;
   padding: 10px;
 }
 #element.normal.normal {
