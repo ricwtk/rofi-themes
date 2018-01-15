@@ -69,7 +69,6 @@ configuration {
 #element {
   border:  0;
   padding: 10px 0px 10px 0px;
-  horizontal-align: 0.5;
 }
 #element.normal.normal {
   background-color: @bg;
